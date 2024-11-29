@@ -1,7 +1,8 @@
 // --------------------------------------------------------------------------------- Variables
 
 let storedIdeas = localStorage.getItem("ideas");
-ideas = storedIdeas.split("\n");
+let ideas = storedIdeas ? storedIdeas.split("\n") : [];
+
 
 // --------------------------------------------------------------------------------- Functions
 
