@@ -60,17 +60,6 @@ document.addEventListener('keydown', (event) => {
     }
 });
 
-document.addEventListener('keydown', (event) => {
-    if (event.key === 'Enter') {
-        hide("popups-edit");
-        hide("popups");
-        localStorage.setItem("ideas", document.getElementById('popups-edit-input').value);
-        storedIdeas = localStorage.getItem("ideas");
-        console.log(storedIdeas);
-        ideas = storedIdeas.split("\n");
-    }
-});
-
 document.getElementById("popups-edit-cancel").addEventListener("click", () => {
     hide("popups-edit");
     hide("popups");
